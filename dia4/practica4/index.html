@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>  
+    <head> 
+        <title>Registro de clientes</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="resources/fv.ico"/>
+    </head>
+
+    <body>
+        <h1>Registro de clientes</h1>
+        <form method="post" action="Guardar_Cliente">
+            <input type="text" placeholder="Nombre y Apellido" required autofocus/> <br>
+            <label>Fecha de nacimiento</label>
+            <input type="date"/> <br>
+            <select>
+                <option disabled selected> Elige tu Ciudad </option> 
+                <option>Asuncion</option>
+                <option>San Lorenzo</option>
+                <option>Fernando de la Mora</option> 
+            </select>
+            <textarea placeholder="Escribe tu dirección"></textarea> <br>
+                <iframe width="350" height="250" src="https://www.openstreetmap.org/export/embed.html?bbox=-76.025390625%2C-30.543338954230222%2C-46.36230468750001%2C-16.109153239219467&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=6/-23.52/-61.19">Ver el mapa más grande</a></small> <br>
+            <input type="text" placeholder="Numero de Telefono"/> <br>
+            <input type="email" placeholder="Correo Electronico"/> <br>
+            <label>Genero</label> <br>
+            <input type="radio" name="genero"> Masculino <br>
+            <input type="radio" name="genero"> Femenino <br>
+            <input type="radio" name="genero"> Otro <br>
+            <button class="btn btn_envio">Enviar</button>
+        </form>
+    </body>
+
+</html>

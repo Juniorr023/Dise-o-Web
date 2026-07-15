@@ -1,0 +1,29 @@
+.cambio{
+    border-collapse: collapse;
+    width: 50%;
+    border:solid 2px #2e5d3a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cambio td{
+    padding: 6px;
+    border: 1px solid ;
+}
+
+.cambio tr{
+    padding: 6px;
+    border: 1px solid ;
+}
+
+.color{
+    background-color:#538861 ;
+}
+
+.cambio th{
+    padding: 8px;
+}
+
+.right{
+    text-align: right;
+    font-weight: bold;
+}

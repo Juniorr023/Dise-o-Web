@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+        <style>
+                .mini_img{
+                    width: auto;
+                    height: 200px;
+                }
+
+                .img-visor{
+                    width: 100%;
+                    height: auto;
+                }
+            </style>
+
+        <script>
+            $(document).ready(function(){
+                $(".mini_img").on("mouseenter", function(){
+                    var nuevaSrc = $(this).attr("src");
+                    $(".img-visor").attr("src", nuevaSrc);
+                });
+            });
+
+            
+
+        </script>
+    </head>
+    <body>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAB7Vg-i_zGQMFJMTg5-EpQLQd0Rx40anbqCz3bYnfyM4IeqO6USroU0c&s=10" class="mini_img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTquqVPBsPm6jsdecxCHgPn5W4I5OGEB-VLJA8QoBZT8pzcjw7pvdveISk&s=10" class="mini_img">
+        <img src="https://popular2.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2026/06/30044327/mx8p73be.jpg" class="mini_img">
+
+        <div id ="visor">
+            <img src="https://paraguayoindependiente.com/wp-content/uploads/2026/03/futbol-17_03-gustavo-alfaro.png" class="img-visor">
+        </div>
+    </body>
+</html>

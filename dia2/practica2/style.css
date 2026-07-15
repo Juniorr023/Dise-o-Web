@@ -1,0 +1,48 @@
+
+
+.capa_izquierda{
+    width: 30%;
+    height: 200px;
+    background-color: rgba(25, 104, 179, 0.5);
+    margin-top: 100px;
+    margin-left:200px;
+    /*  SOMBRA Y ESQUINAS*/
+    box-shadow: 5px 5px 5px rgb(39, 36, 36);
+    border-radius: 10px;
+    position: absolute;
+}
+.capa_derecha{
+    width: 30%;
+    height: 200px;
+    background-color: rgba(83, 31, 179, 0.5);
+    margin-top: 200px;
+    margin-left: 500px;
+    /*  SOMBRA Y ESQUINAS*/
+    box-shadow: 5px 5px 5px rgb(39, 36, 36);
+    border-radius: 10px;
+    position: absolute;
+}
+.resaltar_capa:hover{
+    z-index:10;
+    transform: scale(1.5);
+}
+
+.capa_emoji:hover{
+    margin-left: -10px;
+}
+
+.capa_emoji{
+    width:100px;
+    height: 50px;
+    border-radius:0px 15px 15
+    
+    px 0px;
+    transition: 300ms;
+    box-shadow: 5px 5px 5px rgb(39, 36, 36);
+    background-color: rgba(255, 0, 0, 0.979);
+    margin-top: 600px;
+    margin-left: -70px;
+    text-align: Right;
+    font-size: 25pt;
+    position: absolute;
+}

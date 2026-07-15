@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-PY">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro de Productos</title>
+        link rel="stylesheet" href="css/bootstrap.min.css"><
+    </head>
+    <body>
+        <h1> Formulario de Registro de Producto</h1>
+
+        <div class="mb-3">
+            <label for="codigo_barras" class="form_label">Código de barras:</label>
+            <input type="text" class="form-control" id="codigo_barras">
+        </div>
+
+        <div class="mb-3">
+            <label for="nombre_producto" class="form_label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre_producto">
+        </div>
+
+        <div class="mb-3">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" class="form-select">
+                <option selected disabled>Seleccione una categoria:</option>
+                <option>Hogar</option>
+                <option>Climatización</option>
+                <option>Tecnología</option>
+            </select>
+
+        <div class="mb-3 mt-3" form-floating>
+            <textarea class="form-controlx" id="descripcion" placeholder="Descripcion"></textarea>
+            <label for="descripcion"> </label>
+        </div>
+
+        <div class="mb-3" form-control>
+            <label for="precio" >Precio</label>
+            <input type="number" class="form-control" id="precio">
+        </div>
+
+        <div class="mb-3" form-check>
+            <input type="radio" name="iva" id="radio1" disabled>
+            <label for="radio1">Excento</label> <br>
+
+            <input type="radio" name="iva" id="radio2">
+            <label for="radio2">IVA 5%</label> <br>
+
+            <input type="radio" name="iva" id="radio3">
+            <label for="radio3">IVA 10%</label> <br>
+        </div>
+
+        <div class="mb-3">
+            <label for="foto_producto"></label>
+            <input type="file" id="foto_producto">
+        </div>
+
+        <div>
+            <button id="btnn_save" class="btn btn-success">Guardar</button>
+            <button id="btnn_reset" class="btn btn-secondary">Resetear</button>
+        </div>
+    </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</html>

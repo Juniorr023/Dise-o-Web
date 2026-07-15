@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es-PY">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicios en javaSript </title>
+    </head>
+    <body>
+
+    </body>
+        <script>
+            let secreto = Math.floor(Math.random() * 10 ) + 1;
+            let intento;
+
+            do{
+                intento = parseInt(prompt("Adivina el numero del 1 al 10: "));
+            }while (intento !== secreto){
+                document.write("¡Correcto!")
+            }
+        </script>
+</html>

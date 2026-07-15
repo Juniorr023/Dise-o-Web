@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Web Concierto</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>PANTERA</h1>
+            <p>Banda de Metal, E.E.U.U Texas</p>
+        </header>
+
+        <audio id="musica" src="audio/pantera.mp3" loop></audio>
+        <button id="btnaudio"> Reproducir Musica</button>
+
+        <Main>
+            <div class="portada">
+                <h2 id="contador">Cargando...</h2>
+            </div>
+        </Main>
+
+        <section id="videos">
+            <h2> Videos</h2>
+
+           <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5SAEMjVQbmin3g7b0RG6me?utm_source=generator&si=77c7afc3f7fa4fd5" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2SgbR6ttzoNlCRGQOKjrop?utm_source=generator&si=7d2ac125d85945b5" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2M5WTwqnkyz7bW6P1CiD6q?utm_source=generator&si=ab05435c633a4092" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+
+        <footer>
+            <p>© 2025 PANTERA · Pantera.com.py</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>

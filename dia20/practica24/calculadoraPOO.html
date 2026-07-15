@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-PY">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicios en javaSript </title>
+    </head>
+    <body>
+
+    </body>
+        <script>
+            class Calculadora{
+                #num1;#num2;#resultado;
+                constructor(){
+                    this.#num1 = 0;
+                    this.#num2 = 0;
+                    this.#resultado = 0;
+                }
+                cargarNumero(x,y){
+                    this.#num1 = x;
+                    this.#num2 = y;
+                }
+                sumar(){
+                    this.#resultado = this.#num1 + this.#num2;
+                    return this.#resultado;
+                }
+                restar(){
+                    this.#resultado = this.#num1 - this.#num2;
+                    return this.#resultado;
+                }
+                multiplicar(){
+                    this.#resultado = this.#num1 * this.#num2;
+                    return this.#resultado;
+                }
+                dividir(){
+                    this.#resultado = this.#num1 / this.#num2;
+                    return this.#resultado;
+                }
+            }
+
+              
+        </script>
+            <h1>Calculadora POO</h1>              
+        <script>
+            casio = new Calculadora();
+            casio.cargarNumero(56, 5);
+            document.write("La suma es: " + casio.sumar() + "<br>");
+            document.write("La resta es: " + casio.restar() + "<br>");
+            document.write("La multiplicacion es: " + casio.multiplicar() + "<br>");
+            document.write("La division es: " + casio.dividir() + "<br>");
+        </script>
+</html>

@@ -1,0 +1,11 @@
+.card{
+    width: auto;
+    height: 80px;
+    transition: 300ms;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: 10px 5px 10px rgb(33,34,98);
+}
+
+.card:hover{
+    transform: scale(1.2); /* 120*/
+}

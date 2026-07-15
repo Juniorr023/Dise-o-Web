@@ -1,0 +1,42 @@
+body{
+    font-family:monospace; background: #0d0014;
+    color:white; text-align: center; margin: 0;
+}
+
+header{background-color: #1a0a2e; padding: 20px;}
+
+.portada{
+    background-image: url(images/img1.jpg);
+    background-size: cover; background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#btnaudio{
+    padding: 15px;
+    background-color: #452a66;
+    border-radius: 8px;
+    color:white;
+}
+#contador{
+    background-color: rgba(8, 8, 8, 0.568);
+    padding: 16px 28px;
+    border-radius: 8px; font-size: 22px;
+}
+#contador:hover{
+    scale: 2.1;
+}
+#videos{ padding: 0px;}
+
+#videos a{
+    color: #9b30f5; display: block; margin: 8px;
+}
+
+footer{
+    background: #1a0a2e;
+    padding: 16px;
+    color: #888;
+}

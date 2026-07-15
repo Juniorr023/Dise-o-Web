@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery y jsPDF v4.2.1</title>
+    
+    <!-- FIX 1: Cambiado a jquery.min.js (Verifica que tu archivo se llame así) -->
+    <script src="jquery-4.0.0.min.js"></script>
+    
+    <!-- FIX 2: Cambiado a html2canvas.min.js (Verifica si tu archivo tiene el .min) -->
+    <script src="html2canvas.js"></script>
+    
+    <!-- jsPDF Library (Este está perfecto) -->
+    <script src="jspdf.umd.min.js"></script>
+</head>
+    <body>
+
+        <!-- The content you want to convert into a PDF -->
+        <div id="content" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; margin-bottom: 20px;">
+            <h2>Generar PDF con jsPDF</h2>
+            <p>Este es un ejemplo de cómo generar un PDF con jsPDF versión v4.2.1 usando el nuevo motor síncrono/asíncrono.</p>
+        </div>
+
+        <!-- Action Button -->
+        <button id="download-btn">Descargar PDF</button>
+
+        <script>
+    $(document).ready(function() {
+        $("#download-btn").click(function() {
+            
+            if (typeof html2canvas !== 'undefined') {
+                window.html2canvas = html2canvas;
+            } else {
+                alert("Error: html2canvas library failed to load.");
+                return;
+            }
+
+            var doc = new jspdf.jsPDF();
+            
+            // LA CORRECCIÓN CRÍTICA: Agrega [0] al final para obtener el nodo DOM nativo
+            var elementHTML = $('#content')[0]; 
+
+            doc.html(elementHTML, {
+                x: 15,
+                y: 15,
+                width: 170,        
+                windowWidth: 650,  
+                callback: function (pdf) {
+                    pdf.save('ejemplo.pdf'); 
+                }
+            });
+        });
+    });
+</script>
+    </body>
+</html>

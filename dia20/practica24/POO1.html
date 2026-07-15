@@ -1,0 +1,36 @@
+<script>
+    class Persona{
+        #nombre;
+        constructor(nombre){
+            this.#nombre = nombre;
+        }
+        mostrarDatos(){
+            return this.#nombre;
+        }
+        cambiarDatos(n){
+            if(n != ""){
+                this.#nombre = n;
+            }
+        }
+    }
+
+    class Alumno extends Persona{
+        constructor(nombre,matricula){
+            super(nombre);
+            this.matricula = matricula;
+        }
+        mostrarDatos(){
+            return super.mostrarDatos() + ", Matricula:" + this.matricula;
+        }
+    }
+
+
+</script>
+
+    <h1>Prueba de POO en JavaScript</h1> 
+
+<script>
+    
+    alumno1 = new Alumno("Junior", "C-12345");
+    document.write("Datos del alumno: " + alumno1.mostrarDatos());
+</script>

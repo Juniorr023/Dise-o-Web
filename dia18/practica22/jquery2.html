@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uso de JQuery</title>
+    <script src="jquery-4.0.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#ocultar").click(function(){
+                $("p").hide();
+            });
+
+            $("#mostrar").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="ocultar">Ocultar Párrafo</button>
+    <button id="mostrar">Mostrar Párrafo</button>
+    
+    <h2> Introduccion a JQuery</h2>
+    <p> Texto de prueba</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name=" viewport " content=" width = device-width, initial-scale= 1">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+    <body class="bg-gray-200 flex justify-center items-center min-h-screen">
+
+        <div class="bg-white rounded-2xl shadow-md p-8 w-80">
+
+            <h4 class="text-xl font-semibold text-center mb-6"> Iniciar Sesion</h4>
+
+            <div class="mb-4">
+                <label  for="usuario" class="block text-sm font-medium mb-1"> Usuario </label>
+                <input type="text" id="usuario" placeholder="Ingrese su Usuario"  class="w-full border border-gray-300 rounded-lg px-3 py-2
+                    text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-medium mb-1"> Contraseña </label>
+                <input type="password" id="password" placeholder="Ingresa tu contrasena" id="password"
+                    class="w-full border border-gray-300 rounded-lg px-3 py-2
+                    text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"> 
+                    
+            </div>
+
+         <button class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition font-medium">Enviar</button>
+
+        </div>
+    </body>
+        
+</html>
